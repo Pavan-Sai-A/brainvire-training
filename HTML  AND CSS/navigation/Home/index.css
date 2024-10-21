@@ -1,0 +1,250 @@
+.container{
+  width: 940px;
+  /* max-width: 940px;  it will not materr how much the window size is it will fit 940px*/
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  /* background-image: url(./life-on-the-tracks.jpg);
+  background-repeat: no-repeat; */
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+html{
+  background-color: aquamarine;
+}
+header{
+  text-align: center;
+  padding: 0;
+  letter-spacing: 1px;
+  /* text-shadow: 1px 1px 0 green; */
+  /* text-transform: uppercase; */
+  /* text-decoration: underline; */
+  /* text-indent: 15px; */
+  /* line-height: 15px; */
+  }
+footer{
+  text-align: center;
+}
+
+.contentelement {
+  border-bottom: 2px solid green;
+  border-top: 2px solid black;
+  box-sizing: border-box;
+  margin-top: 0;
+
+}
+
+.main-area{
+  width: 72%;
+  float: left;
+  box-sizing: border-box; /* to get the box */
+}
+.sidebar{
+  width: 28%;
+  float: left;
+  background: #2980B9; 
+  text-align:justify;
+  box-sizing: border-box;
+  font-size: 90%;
+  margin-top: 5px;
+  padding: 10px 20px;
+
+  /* background-image: url(./life-on-the-tracks.jpg); */
+  /* background-size: cover;  */
+  /* background-position:center bottom; */
+  /*  background-repeat: no-repeat; */
+  /* background: #2980B9 url("./life-on-the-tracks.jpg") center center no-repeat ; */ 
+}
+
+
+@media screen and (max-width: 700px){
+  .main-area,.sidebar,.container{
+    width: auto;
+    float: none;
+  }  
+  .main-area{
+    padding: 0;
+  }
+  .navelement a{
+    padding: auto;
+    float: none;
+    /* margin: 2px; */
+  }
+  .navelement li{
+    width: 33%;
+    margin-top: 5px;
+  }  
+}
+
+.navelement{
+  margin-bottom: 0;
+  padding: 0;
+
+}
+
+
+.navelement li{
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+  text-decoration: none;
+  /* display: inline; */
+}
+
+.navelement a{
+  display: block;
+  text-decoration: none;
+  border: 2px solid green;
+  padding:10px 20px;
+  color: rgb(123, 151, 243);
+}
+
+
+.navelement a:hover{
+
+  background-color: rgb(166, 229, 229);
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.image{
+  position: relative;
+  overflow: hidden;
+}
+
+.image img{
+  display: block;
+  transition: all 2s;
+}
+
+.image:hover img{
+  transform: scale(2);
+
+
+}
+
+.banner{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.363);
+  padding: 5px;
+  width: 95%;
+  transition-property: all;
+  opacity: 0;
+  transition-duration: 2s;
+  transform: translateX(100%);
+}
+.image:hover .banner{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+/* tabel content */
+
+table{
+  margin-top: 15px;
+  border-spacing: 0;
+  border-collapse: collapse;  
+  width: 96.8%;
+}
+
+
+table th{
+  text-align: left;
+  background-color: rgb(35, 111, 141);
+  /* color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); */
+}
+
+table th,
+table td{
+  background-color: rgb(106, 207, 168);
+  border: 2px solid ;
+  pad: 10px;
+}
+
+
+table tbody tr:nth-child(odd) td{
+  background-color: rgb(231, 197, 103);
+}
+
+.col-names{
+  width: 60%;
+}
+.col-sno,
+.col-marks{
+width: 20%;
+
+}
+
+table th {
+  text-align: center;
+}
+
+table  td:nth-child(2),
+table td:nth-child(3){
+  text-align: center;
+  vertical-align: top;
+}
+
+
+
+
+
+.fix{
+  clear: both;
+}
+
+.group:before,
+.group:after{
+content: "";
+display: table;
+}
+
+.group:after{
+  clear: both;
+}
+
+.group{
+  zoom: 1;
+}
+
+
+
+
+/* .ui-menu ul{
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.ui-menu li{
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+.ui-menu a{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(./sprites.png);
+  text-indent: -999px;
+  background-repeat: no-repeat;
+
+
+}
+.ui-home a:hover{background-position:-50px 0 ;}
+
+.ui-contact a{background-position: 0 -50px;}
+.ui-contact a:hover{background-position:-50px;} */

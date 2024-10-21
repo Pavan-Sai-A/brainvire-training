@@ -1,0 +1,16 @@
+body{
+   background-image: repeating-linear-gradient(to right,rgb(152, 152, 224),rgb(144, 244, 144));
+}
+
+.button{
+   background-color: transparent;
+   border-width: 0;
+}
+.button a{
+   text-decoration: none;
+   color: black;
+}
+
+.button :hover{
+   color: green;
+}

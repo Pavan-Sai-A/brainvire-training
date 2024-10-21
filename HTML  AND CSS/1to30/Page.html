@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>Example1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hi</h1>
+      <p>This is <a href="css.html">Example</a></p>
+      <!-- <img src="images/life-on-the-tracks.jpg" alt="life on Track"/> -->
+      <!-- if we type src="../cat.jpg" it wil go to up of the file in file manager -->
+    </header>
+    </br >
+    </br >
+    </br >
+  <h1 style="color:green" >Music </h1>
+    <audio controls>
+      <source src="audio/ukulele.mp3" type="audio/mpeg"> <!-- This is for DIFFERENT Web browsers -->
+      <source src="audio/ukulele.ogg" type="audio/ogg"> <!-- This is for DIFFERENT Web browsers -->
+    </audio>
+    <p class="header">Lets Play Music</pdldt>
+    <a href="audio/ukulele.mp3">Click for audio</a> <!-- This is for oudated Web browsers -->
+  </br >
+  </br >
+  </br >
+<h1 style="color:blue">Video</h1>
+<video controls>
+  <source src = "Video/example.mp4" type="video/mp4">
+  <source src = "Video/example.webm" type="video/webm">
+  <source src = "Video/example.ogv" type="video/ogv">
+</video>
+
+<p>Video Player</p>
+  <a href="Video/example.mp4">Click for Video</a> <!-- This is for oudated Web browsers -->
+<!--  -->
+<!-- LISTS -->
+<h1 style="color:red">LISTS</h1>
+<!--  -->
+<article>
+  <div class="article-body">
+  <ul>
+    <li>UL</li>
+    <li>data2</li>
+    <li>data3</li>
+  </ul>
+  
+  <ol>
+    <li>OL</li>
+    <li>data2</li>
+    <li>data3</li>
+  </ol>
+
+
+  <dl>
+    <dt>DL</dt>
+    <dd>data2</dd>
+    <dd>data3</dd>
+  </dl>
+
+</div>
+</article>  
+ <!--ARTICLE-->
+<!-- <aside></aside> tis is used to seperate the article  -->
+
+<footer> <!--Footer Example-->
+    <h1 style="color: brown;">Bold AND Italic</h1>
+    <strong>BOLD</strong> <!-- <b>This is also makes BOLD</b> -->
+  </br>
+
+    <em>Italic</em> <!--   <i>can be used As Italic</i> -->
+
+    <p>Trademark symbol: &trade;</p> <!-- This for SYMBOLS https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML-->
+
+  </footer>
+<!--Nav Bar Example-->
+ <h1 style="color: rgb(230, 181, 20);">NAV <span class="span-elemet"> Data</span> ELEMENT </h1> <!-- SCEMATIC ELEMENT-->
+  <nav>
+    <ul>
+      <li><a href="Example.html">EXAMPLE LINK &copy;</a></li>
+    </ul>
+  </nav>
+
+<!--Sections are used to differnciate between  the data -->
+  <h1 style="color: rebeccapurple;">SECTION</h1>
+<section>
+  <h1>H1 heading</h1>
+  <section>
+    <h1>H2 Heading in sub Section</h1>
+    <section>
+      <h1>H3 Heading in after two section </h1>
+    </section>
+  </section>
+</section>
+
+<!-- FORMS-->
+<h1>Forms</h1>
+<form>
+  <label for="input">Input:</label>
+  <input id="input" type="text" name="input" placeholder="Input Element"/>
+</br>
+<label for="password">Password:</label>
+
+  <input  id="password" type="password" placeholder="Password"/>
+</br>
+
+  <label >SECURITY KEY: <input type="password" placeholder="KEY"/> </label>
+  <!-- inernal Form-->
+  <input type="submit" value="SUBMIT"/>
+  <h1>Text Area</h1>
+  <label for="comments">
+    Comments
+  </label><textarea id="comments" name="comments"></textarea>
+</form>
+
+
+<h1> Chosing Between Set Of Options</h1>
+
+<label for="picknum">Select or Drop Down Menu</label>
+<select name="picknum" id="picknum">
+  <option value="1"> 1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+
+<fieldset>
+ <legend> <label for="radiodata">Select Data</label></legend>
+
+<input id= "1" type="radio" name="data1" value="1"/><label for="1">1</label>
+<input type="radio" name="data1"/><label>2</label>
+<input type="radio" name="data1"/><label>3</label>
+</fieldset>
+
+<h2>Example of &ldquo;Checkbox&rdquo; inputs.</h2>
+<fieldset>
+  <legend>Which meals do you enjoy? (check all that apply)</legend>
+  <input type="checkbox" id="breakfast2" name="favoriteMeal2" value="meal1"><label for="breakfast2">Breakfast</label>
+  <input type="checkbox" id="brunch2" name="favoriteMeal2" value="meal2"><label for="brunch2">Brunch</label>
+  <input type="checkbox" id="lunch2" name="favoriteMeal2" value="meal3"><label for="lunch2">Lunch</label>
+</fieldset>
+
+</body>
+</html>

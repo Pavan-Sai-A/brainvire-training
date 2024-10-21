@@ -1,0 +1,124 @@
+body{
+    max-width: 1024px;
+    background-color: rgb(200, 252, 247);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Form Styles */
+
+input[type ="username"],
+input[type ="password"],
+select{
+    font-family: 'Times New Roman', Times, serif;
+    height: 80px;
+    width: 100%;
+    display: block;
+    outline: none;  /* for Chrome */
+    box-sizing: border-box;
+    padding: 0 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(240, 240, 240)
+}
+
+form{
+    background-color: rgba(94, 196, 209, 0.308); 
+    padding: 30px 40px;
+    width: 35%;
+    margin-top: 120px;
+/* Gradient */
+background-image: linear-gradient(to top right, rgb(179, 180, 179), rgb(187, 187, 224));
+box-shadow: -15px -15px 5px rgba(63, 61, 61, 0.39);
+/* box-shadow: inset to get to inner shadow horizontal vertical blurradius color (*),horizontal vertical blurradius color */
+border-radius:10px;
+ /* border-radius:topleft topright bottomright bottomleft and / 25px for vertical*/ 
+
+
+}
+.username{
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type ="username"]:focus,
+input[type ="password"]:focus
+    {
+    border: 2px solid rgb(17, 211, 17);
+    box-shadow: inset 2px 2x 2px rgba(54, 216, 14, 0.247);
+}
+
+input[type="submit"]{
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(223, 31, 31);
+    color: whitesmoke;
+    padding: 10px;
+    border:  1px solid greenyellow;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color: darkgreen;
+}
+.checkboxtext{
+    color: green;
+    margin-bottom: 10px;
+
+}
+/* 
+select{
+   /* -webkit-appearance: none;*/ /* This is used to remove default behaiour of the element */
+
+.submitbutton{
+    width: fit-content;
+  padding: 07px;
+    text-decoration: none;
+    background-color: rgb(58, 140, 212);
+    border: 2px solid green;
+    width: 50%;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+
+}
+
+.submitbutton:hover{
+    background-color: green;
+}
+
+
+@keyframes starspin {
+    50%{
+        transform:translateX(150%) scale(.7);
+    }
+    50%{
+
+        transform:translateX(150%) rotate(180deg) scale(.5);
+
+    }
+    100%{
+        transform: translateX(300%) rotate(180deg);
+    }
+
+    
+}
+.star{
+    max-width: 100%;
+    animation: starspin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 20%;
+    height: auto;
+}
